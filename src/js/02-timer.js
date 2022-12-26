@@ -27,6 +27,7 @@ const options = {
     } else {
       startBtn.disabled = false;
       startBtn.addEventListener('click', () => {
+        startBtn.disabled = true;
         let timerId = setInterval(() => {
           const ms = selectedDates[0] - new Date();
           convertMs(ms);
